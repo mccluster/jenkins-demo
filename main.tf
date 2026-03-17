@@ -15,7 +15,7 @@ provider "azurerm" {
 terraform {
   backend "azurerm" {
     resource_group_name  = "RG1"
-    storage_account_name = "<your storage account>"
+    storage_account_name = "jenkinsstateclucks.blob.core.windows.net"
     container_name       = "terraform-state"
     key                  = "terraform.tfstate"
   }
